@@ -6,7 +6,7 @@ function ReAuthRoute({ children }) {
     const [loading, setLoading] = useState(true)
     const navigate = useNavigate();
     useEffect(() => {
-        axios.get(`${process.env.REACT_APP_SERVER_URL}/api/v1/users/checkauth`, { withCredentials: true })
+        axios.get("/api/v1/users/checkauth", { withCredentials: true })
             .then(res => {
                 navigate('/home')
             })

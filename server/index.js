@@ -3,7 +3,7 @@ require("./utils/dbConnect")();
 const express = require("express");
 const app = express();
 const cookieParser = require("cookie-parser");
-const PORT = Number(process.env.PORT) || 8000;
+const PORT =  8000;
 const userRoutes = require("./routes/UserRoutes");
 const gameRoutes = require("./routes/GameRoutes");
 const { errorHandler } = require("./middleware/errorHandler");

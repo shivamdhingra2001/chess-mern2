@@ -26,19 +26,19 @@ export default function App() {
     <>
       <ThemeProvider theme={theme}>
         <MaxWidthWrapper>
-          <SocketProvider>
+        <SocketProvider>
             <BrowserRouter>
               <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/login" element={
-                  <ReAuthRoute>
+                  
                     <Login />
-                  </ReAuthRoute>
+                
                 } />
                 <Route path="/signup" element={
-                  <ReAuthRoute>
+                
                     <Signup />
-                  </ReAuthRoute>
+                 
                 } />
                 <Route path="/home" element={
                   <AuthRoute>
@@ -102,7 +102,7 @@ export default function App() {
               </Routes>
             </BrowserRouter>
 
-          </SocketProvider>
+            </SocketProvider>
         </MaxWidthWrapper >
       </ThemeProvider >
     </>

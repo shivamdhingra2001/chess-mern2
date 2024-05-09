@@ -25,14 +25,14 @@ function ContactUs(props) {
                     <div className="flex flex-col gap-4 justify-center w-full">
                         <span className="text-xl font-light">Get in touch with us</span>
                         <span>
-                            Email: <a href="mailto:sagnikm183@gmail.com" className="text-blue-600 hover:text-blue-800">sagnikm183@gmail.com</a>
+                            Email: <a href="mailto:sagnikm183@gmail.com" className="text-blue-600 hover:text-blue-800">abc@gmail.com</a>
                         </span>
 
                         <span>
                             Socials:
                             <div className="flex flex-row gap-4 m-3">
-                                <a href="https://www.linkedin.com/in/sagnik-majumder-92345524b" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">LinkedIn</a>
-                                <a href="https://github.com/sagnikMajumder89" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">GitHub</a>
+                                <a href="" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">LinkedIn</a>
+                                <a href="" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">GitHub</a>
                             </div>
                         </span>
                     </div>

@@ -122,7 +122,7 @@ function Gameboard() {
     if (isLoading) return <div>Loading...</div>
     return (
         <>
-            <div className='flex flex-row items-center justify-center bg-background w-full h-full'>
+            <div className='flex flex-row items-center justify-center bg-background h-auto w-full '>
                 <div className=' w-fit flex items-center justify-start h-full'>
                     <Sidebar />
                 </div>

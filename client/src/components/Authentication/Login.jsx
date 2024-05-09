@@ -26,7 +26,7 @@ function Login() {
     const handleLogin = async ({ username, password }) => {
         setOpenSnackbar({ open: false, type: '', message: '' })
         try {
-            await axios.post(`${process.env.REACT_APP_SERVER_URL}/api/v1/users/login`, { username, password }, { withCredentials: true })
+            await axios.post('http://localhost:8000/api/v1/users/login', { username, password }, { withCredentials: true })
             setOpenSnackbar({ open: true, type: 'success', message: 'Logged in successfully, redirecting...' })
             setTimeout(() => {
                 navigate('/home')
