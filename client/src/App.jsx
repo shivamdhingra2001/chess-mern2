@@ -21,6 +21,7 @@ import Learn from "./components/Learn/Learn";
 import Watch from "./components/Watch/Watch";
 import { SocketProvider } from "./providers/socketContext";
 import { GameDataProvider } from "./providers/gameDataProvider";
+import Playwb from "./components/Play/Playwb";
 export default function App() {
   return (
     <>
@@ -31,9 +32,7 @@ export default function App() {
               <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/login" element={
-                  
                     <Login />
-                
                 } />
                 <Route path="/signup" element={
                 
@@ -97,6 +96,9 @@ export default function App() {
                 } />
                 <Route path="/privacy" element={
                   <PrivacyPolicy />
+                } />
+                <Route path="/playwb" element={
+                  <Playwb />
                 } />
                 {/* <Route path="/about" element={<About />} /> */}
               </Routes>

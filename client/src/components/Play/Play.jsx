@@ -31,9 +31,9 @@ function Play() {
         }
     })
     return (
-        <div className='bg-background w-full h-auto flex flex-row'>
+        <div className='bg-background w-full h-full flex flex-row'>
             <MiniDrawer />
-            <div className="flex flex-col items-center justify-center w-1/2 h-full px-20 py-28">
+            <div className="flex flex-col items-center justify-center w-1/2 px-20 py-28">
                 <div className='w-full border-2 border-copy'>
                     <Chessboard customDarkSquareStyle={{ backgroundColor: '#202d29' }} />
                 </div>

@@ -3,8 +3,13 @@ import { FaRegChessQueen } from "react-icons/fa6";
 import { TbBuildingCommunity } from "react-icons/tb";
 import { BiSupport } from "react-icons/bi";
 import Navbar from '../Navbar/Navbar';
+import { useNavigate } from 'react-router-dom';
 
 function LandingPage() {
+    let navigate = useNavigate();
+    const handleSignup = () => {
+        navigate('/signup')
+    }
     return (
         <>
             <Navbar />
@@ -15,7 +20,7 @@ function LandingPage() {
                         <span className='text-primary-content'>blunders.</span>
                     </div>
                     <div className='flex flex-row justify-center items-center p-5 m-5 gap-12'>
-                        <button className='bg-gradient-to-l hover:bg-gradient-to-r from-primary-content to-primary rounded-full p-3'>
+                        <button  onClick ={handleSignup} className='bg-gradient-to-l hover:bg-gradient-to-r from-primary-content to-primary rounded-full p-3'>
                             Signup now!
                         </button>
                         <button>Already a member?</button>
